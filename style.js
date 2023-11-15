@@ -26,4 +26,5 @@ body{
 .saveBtn{
   height:5vh;
   width:20%;
+  border:1px solid black;
 }
