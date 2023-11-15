@@ -11,14 +11,22 @@ const con = document.createElement('div');
 con.classList.add('con');
 oldBody.appendChild(con);
 
+let saveBtn = document.createElement('button');
+saveBtn.innerText="Save";
+con.appendChild(saveBtn);
+
 let inp = document.createElement('input');
-function btn(){
+
+function saveTodo(){
   if(inp.value){
     localStorage.setItem("todo",inp.value)
     alert("done")
   }
 }
 con.appendChild(inp);
+saveBtn.addEventListener('click',()=>{
+  saveTodo();
+})
 
 setTimeout(()=>{
   alert(localStorage.getItem("todo"));
