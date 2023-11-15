@@ -30,8 +30,26 @@ saveBtn.addEventListener('click',()=>{
   saveTodo();
 })
 
-setTimeout(()=>{
-  alert(localStorage.getItem("todo"));
-},5000)
+var listD = document.createElement("div");
+listD.classList.add("listD");
 
+setTimeout(() => {
+  var todos = JSON.parse(localStorage.getItem("todo")); // Retrieve todos from localStorage
+
+  if (todos && todos.length > 0) {
+    todos.forEach(function(todo) {
+      var p = document.createElement("p");
+      var checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.checked = todo.checked; // Assuming each todo has a 'checked' property indicating its state
+
+      var text = document.createTextNode(todo.text); // Assuming each todo has a 'text' property containing its content
+      p.appendChild(checkbox);
+      p.appendChild(text);
+      listD.appendChild(p);
+    });
+  } else {
+    console.log("No todos found.");
+  }
+}, 5000);
 
