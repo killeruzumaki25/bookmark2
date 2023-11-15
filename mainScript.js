@@ -13,10 +13,11 @@ oldBody.appendChild(con);
 
 let saveBtn = document.createElement('button');
 saveBtn.innerText="Save";
+saveBtn.classList.add('saveBtn');
 con.appendChild(saveBtn);
 
 let inp = document.createElement('input');
-
+inp.classList.add('todoInput');
 function saveTodo(){
   if(inp.value){
     localStorage.setItem("todo",inp.value)
