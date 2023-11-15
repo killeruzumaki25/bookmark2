@@ -6,6 +6,7 @@ body{
   display:flex;
   flex-direction:column;
   position:fixed;
+  height:100vh;
 }
 .todoInput{
   width:100%;
