@@ -6,7 +6,6 @@ body{
 }
 .con{
   background-color:grey;
-  background-color:white;
   width:35%;
   height:50vh;
   position:fixed;
