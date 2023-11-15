@@ -1,4 +1,4 @@
-/*body{ 
+body{ 
 scroll-behavior: smooth;
 }
 *{z-index:9999;}
@@ -23,4 +23,4 @@ color:black;
 .saveBtn{
   height:5vh;
   width:20%;
-}*/
+}
