@@ -48,6 +48,7 @@ setTimeout(() => {
       p.appendChild(text);
       listD.appendChild(p);
     });
+    con.appendChild(listD);
   } else {
     console.log("No todos found.");
   }
