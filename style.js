@@ -5,6 +5,7 @@ body{
   z-index:9999;
 }
 .con{
+  background-color:grey;
   background-color:white;
   width:35%;
   height:50vh;
