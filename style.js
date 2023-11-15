@@ -1,12 +1,19 @@
-body{
-  background-color:red;
+body{ 
+scroll-behavior: smooth;
 }
+*{z-index:9999;}
 .con{
-  background-color:red;
-  display:flex;
-  flex-direction:column;
-  position:fixed;
-  height:100vh;
+background-color:white;
+width:35%;
+height:50vh;
+position:fixed;
+left:65%;
+display:flex;
+z-index:9999;
+top:0;
+border-radius:2%;
+overflow:hidden;
+color:black;
 }
 .todoInput{
   width:100%;
