@@ -3,4 +3,5 @@ body{
 }
 .con{
   background-color:red;
+  display:flex;
 }
