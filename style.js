@@ -4,4 +4,5 @@ body{
 .con{
   background-color:red;
   display:flex;
+  flex-direction:column;
 }
