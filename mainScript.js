@@ -11,11 +11,6 @@ const con = document.createElement('div');
 con.classList.add('con');
 oldBody.appendChild(con);
 
-let saveBtn = document.createElement('button');
-saveBtn.innerText="Save";
-saveBtn.classList.add('saveBtn');
-con.appendChild(saveBtn);
-
 let inp = document.createElement('input');
 inp.classList.add('todoInput');
 function saveTodo(){
@@ -25,6 +20,12 @@ function saveTodo(){
   }
 }
 con.appendChild(inp);
+
+let saveBtn = document.createElement('button');
+saveBtn.innerText="Save";
+saveBtn.classList.add('saveBtn');
+con.appendChild(saveBtn);
+
 saveBtn.addEventListener('click',()=>{
   saveTodo();
 })
