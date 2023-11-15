@@ -11,13 +11,14 @@ const con = document.createElement('div');
 con.classList.add('con');
 oldBody.appendChild(con);
 
-let inp = document.getElementById('input')
+let inp = document.createElement('input');
 function btn(){
   if(inp.value){
     localStorage.setItem("todo",inp.value)
     alert("done")
   }
 }
+con.appendChild(inp);
 
 setTimeout(()=>{
   alert(localStorage.getItem("todo"));
