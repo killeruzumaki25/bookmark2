@@ -1,6 +1,5 @@
 body{ 
   scroll-behavior: smooth;
-  background-color:red;
 }
 *{
   z-index:9999;
@@ -21,6 +20,8 @@ body{
 .todoInput{
   width:100%;
   height:5vh;
+  outline:none;
+  border:1px solid black;
 }
 
 .saveBtn{
