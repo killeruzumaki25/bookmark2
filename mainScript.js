@@ -11,16 +11,6 @@ const con = document.createElement('div');
 con.classList.add('con');
 oldBody.appendChild(con);
 
-let inp = document.createElement('input');
-inp.classList.add('todoInput');
-function saveTodo(){
-  if(inp.value){
-    localStorage.setItem("todo",inp.value)
-    alert("done")
-  }
-}
-con.appendChild(inp);
-
 let wallBtn = document.createElement('button');
 wallBtn.innerText="Wallpaper";
 wallBtn.classList.add('wallBtn');
