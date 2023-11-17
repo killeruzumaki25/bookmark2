@@ -17,14 +17,14 @@ body{
   overflow:hidden;
   color:black;
 }
-.todoInput{
+.colorTheme{
   width:100%;
   height:5vh;
   outline:none;
   border:1px solid black;
 }
 
-.saveBtn{
+.wallBtn{
   height:5vh;
   width:20%;
   border:1px solid black;
