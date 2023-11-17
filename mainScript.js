@@ -21,36 +21,12 @@ function saveTodo(){
 }
 con.appendChild(inp);
 
-let saveBtn = document.createElement('button');
-saveBtn.innerText="Save";
-saveBtn.classList.add('saveBtn');
-con.appendChild(saveBtn);
+let wallBtn = document.createElement('button');
+wallBtn.innerText="Wallpaper";
+wallBtn.classList.add('wallBtn');
+con.appendChild(wallBtn);
 
-saveBtn.addEventListener('click',()=>{
-  saveTodo();
-})
-
-var listD = document.createElement("div");
-listD.classList.add("listD");
-
-setTimeout(() => {
-  var todos = JSON.parse(localStorage.getItem("todo")); // Retrieve todos from localStorage
-
-  if (todos && todos.length > 0) {
-    todos.forEach(function(todo) {
-      var p = document.createElement("p");
-      var checkbox = document.createElement("input");
-      checkbox.type = "checkbox";
-      checkbox.checked = todo.checked; // Assuming each todo has a 'checked' property indicating its state
-
-      var text = document.createTextNode(todo.text); // Assuming each todo has a 'text' property containing its content
-      p.appendChild(checkbox);
-      p.appendChild(text);
-      listD.appendChild(p);
-    });
-    con.appendChild(listD);
-  } else {
-    console.log("No todos found.");
-  }
-}, 5000);
-
+let colorTheme = document.createElement("button");
+colorTheme.innerText="Theme"
+colorTheme.classList.add("colorTheme")
+con.appendChild(colorTheme);
